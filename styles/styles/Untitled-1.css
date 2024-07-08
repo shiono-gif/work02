@@ -1,0 +1,426 @@
+@media screen and (min-width: 768px) {  
+    header, .btn, footer {
+      padding: 0px 83px;
+      background-size: cover;
+    }
+    
+    header {
+      position: relative;
+      height:768px;
+      background-image: url(images/heroFullPc.png);
+      /* background-size: cover; */
+    }
+
+.featuredContent, .travel, .event, .basicInformation {
+  /* padding:0px 83px; */
+} 
+
+
+.main {
+  background-size: cover;
+}
+
+    .mainLogoSp {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      top: 22%;
+      left: 16%;
+      width: 780px;
+      height: 314px;
+    }
+  
+    .headerLogoPc {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      left:5%;
+      top: 5%;
+    }
+
+    .drawerSP {
+      display: flex;
+      position: absolute;
+      right: 4px;
+      top: 4px;
+    }
+  
+    .snsIcon {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 20px;
+      bottom: 70px;
+    }
+  
+    .facebook, .instagram, .twitter {
+      margin: 10px 0px;
+    }
+  
+    .featuredContent {
+      display: block;
+      height: 100%;
+    }
+  
+    .containerUpper {
+    display: flex;
+    height:458px;
+    background: url(images/introductionBackgroundImage1.png)left top / auto 100% no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    }
+  
+    .flag {
+        display: block;
+        margin: 0px auto;
+        width: 32px;
+        padding: 20px 0px;
+    }
+  
+    .formosaH12 {
+      display: flex;
+    }
+
+
+    h1 {
+        /* display: flex; */
+        font-size: 24.12px;
+        line-height: 20px;
+        text-align: center;
+        padding: 8px 40.5px;
+    }
+  
+    h2 {
+        /* display: flex; */
+        text-align: center;
+        font-size: 12px;
+        line-height: 12px;
+    }
+  
+    .lineFor {
+      width: 132px;
+      border-bottom-width : thin;
+      margin: 12px auto 60px;
+    }
+  
+    .iI1, .iI2 {
+        display: flex;
+        width: 686px;
+        height: 292px;
+        margin: 60px auto;
+        justify-content: center;
+    }
+  
+    .containerLower {
+    display: flex;
+    background: url(images/introductionBackgroundImage2.png)left top / auto 100% no-repeat;
+    height: 399px;
+    background-position: 50% bottom;
+    background-size: cover;
+    /* padding-top: 20px; */
+    }
+  
+    .lineUpper {
+      width: 223px;
+      border: 1px solid #000000;
+      margin: 20px auto 0px;
+    }
+  
+    .lineLower {
+        width: 223px;
+        border: 1px solid #000000;
+        margin: 0px auto;
+    }
+  
+    h3 {
+        width: 223px;
+        font-size: 12px;
+        line-height: 19.2px;
+        margin: 12px auto;
+    }
+  
+    .heading {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.25);
+        height: 40px;
+        padding: 20px auto 60px;
+    }
+  
+    .headingImg {
+        background-image: url(images/heading.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        /* position: absolute; */
+        background-position: 50% 50%;
+        background-size: contain;
+        margin: 0px auto;
+        height: 40px;
+        width: 220px;
+        /* left:auto;
+        top: auto; */
+    }
+  
+    .headingPhrase {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+    }
+  
+    .headingGa {
+      display: flex;
+      height: 40px;
+    }
+  
+    .headingGaImg {
+        background-image: url(images/heading.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        position: absolute;
+        background-position: 50% 50%;
+        background-size: contain;
+        margin: 0px auto;
+        height: 40px;
+        width: 100%;
+        left:auto;
+        top: auto;
+    }
+  
+    .headingGaPhrase {
+        position: absolute;
+        margin: 0px auto;
+        width: 100%;
+    }
+  
+  
+    .gallery {
+      height: 685px;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+  
+
+
+
+
+/* -------　PCカルーセル　------- */
+
+
+
+  .slick-dots{ /* ドットの位置 */
+    bottom: -78px;
+  }
+  .slick-dots li button:before{ /* ドットの大きさ */
+    font-size: 28px;
+  }
+  .slick-dots li{ /* ドットの間隔 */
+    width: 75px;
+  }
+  .arrow_box { /* 矢印 */
+    width: 628px;
+    margin-left: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .prev-arrow { /* 矢印を回転 */
+    transform: rotate(180deg);
+  }
+  .prev-arrow::before { /* 矢印を画像に変更 */
+    content: url(images/arrows.svg);
+    transform:rotate(45deg);
+  }
+  .next-arrow::before { /* 矢印を画像に変更 */
+    content: url(images/arrows.svg);
+    transform: rotate(45deg);
+  }
+
+}
+
+    .heading2 {
+      display: flex;
+      height: 40px;
+    }
+  
+    .travel {
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+  
+    .smallTxt {
+      font-size: small;
+      align-self: center;
+    }
+  
+    .mapLink {
+        background-image: url(images/mapimage.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: relative;
+        padding-bottom: 40px;
+        margin: 60px auto;
+        height: 406.8px;
+      }
+  
+    #taipei {
+      left:68%;
+      top:19%;
+      position: absolute;
+    }
+  
+    #taityu {
+      left:16%;
+      top:26%;
+      position: absolute;
+    }
+  
+    #tainan {
+      left:30%;
+      top:74%;
+      position: absolute;
+    }
+  
+  
+    .event {
+      background-color: rgba(0, 0, 0, 0.25);
+      padding-top: 60px;
+    }
+    
+    .event img {
+      display: flex;
+      justify-content: center;
+      margin: 0px auto;
+    }
+  
+    .event h2 {
+      font-weight: bold;
+      padding-top: 20px;
+  
+    }
+  
+    .event p {
+      margin: 8px auto 0px;
+      text-align: center;
+    }
+  
+    .lanthanum, .countdown {
+      padding-bottom: 60px;
+    }
+  
+    .basicInfomation {
+      padding: 0px 80px;
+      text-align: center;
+      background-color: var(--gray);
+    }
+  
+    .basicInformation h1 {
+      font-size: 20px;
+      padding: 0px;
+    }
+  
+    .basicInfomation h2 {
+      /* margin-bottom: 40px; */
+    }
+  
+    .basicInfoWrap {
+      border: 1px solid #000;
+      /* margin: 20px ; */
+      /* padding: 20px 20px 20px 20px; */
+      font-size: 12px;
+    }
+  
+    /* .basicInfomation ul {
+      text-align-last: left; */
+      /* width: 78vw; */
+      /* margin-left: auto;
+      margin-right: auto; */
+      /* text-indent: -1em;
+      padding-left: 1em;
+      padding-bottom: 120px; */
+    /* } */
+    .ulBasicInfo {
+      display: flex;
+    }
+    .ulUpper {
+      
+      flex-basis: 50%;
+      display: block;
+      line-height: 19.2px;
+      /* margin: 80px 30px 80px 40px; */
+      /* font-size: 20px; */
+    }
+  
+    .ulLower {
+      flex-basis:50%;
+      display: block;
+      /* margin: 80px 40px 80px 30px; */
+      /* font-size: 20px;
+      line-height: 32px; */
+    }
+
+    /* page top へ戻るボタン*/
+    .pagetop {
+      cursor:pointer;
+      height: 48px;
+      width: 48px;
+      position: fixed;
+      right: 4px;
+      bottom: 30px;
+      display: flex;
+      z-index: 2;
+    }
+  
+    .btn {
+      right: inherit;
+    }
+  
+      /* footer*/
+    footer{
+        background-color: #007ab7;
+        color: #ffff;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footermenu {
+        font-size: 12px;
+        line-height: 12px;
+        width: 195px;
+        margin:20px auto;
+    }
+    footer nav li{
+        border-bottom: 1px solid #FFFFFF;
+        text-align: left;
+        margin-top: 8px;
+        padding-bottom: 8px;
+        padding-top:4px;
+    }
+  
+    .footerflag {
+        width: 32px;
+        height: 24px;
+        margin-top: 20px;
+    }
+    .footerlogo img{
+        width:71px;
+        height: 28px;
+        float: left;
+        margin-right: 24px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    footer .footerSnsIcon img {
+        padding:8px;
+        padding-bottom:12px;
+    }
+    .footerImgSpace {
+        display: flex;
+        text-align: center;
+    }
+    .Copyright {
+        border-top: 1px solid #03A9F4;
+        padding:12px auto;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 10px;
+        margin-bottom: 12px;
+    }

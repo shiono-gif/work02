@@ -1,0 +1,1157 @@
+@charset "utf-8";
+
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background-image: url(../images/loadingSP.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 999;
+  background-color: #007AB7;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+
+/* -------　header　------- */
+/* -------　menu　------- */
+
+@media screen and (max-width: 768px) {
+
+  #nav{
+      position:fixed;
+      top:0;
+      right: -120%;
+      width: 225px;
+      height: 100vh;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      transition: all 0.6s;
+  }
+  #nav .logo img {
+      width: 101px;
+      margin: 8px 0 84px 12px;
+  }
+  #nav .menuButton img {
+      position: absolute;
+      width: 48px;
+      top: 4px;
+      right: 4px;
+  }
+  #nav ul {
+      text-align: center;
+  }
+  #nav ul li {
+      font-size: 20px;
+      font-weight: bold;
+  }
+  #nav ul li:first-of-type {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 60px;
+  }
+  #nav ul li a {
+      display: block;
+      padding: 10px;
+      text-decoration: 1px underline #fff;
+  }
+  
+  #nav li:nth-child(2) {
+      margin-bottom: 40px;
+      /* text-transform: capitalize; */
+      text-transform: uppercase;
+  }
+  #nav li:nth-child(5) {
+      margin-bottom: 40px;
+  }
+  #nav li:nth-child(6) {
+      margin-bottom: 40px;
+      text-decoration: 1px underline #fff;
+  }
+  #nav li:nth-child(7) {
+      text-decoration: 1px underline #fff;
+  }
+  
+  /*---  navを表示させる ---*/
+  #nav.show {
+      right: 0;
+  }
+}
+
+header {
+  height: 667px;
+  width: 100vw; /* 追記 */
+  background-image: url(../images/herotaiwanfull.png); /* 置き換えください*/
+  background-position:  center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0 20px;
+  z-index: 90; /* 追記 */
+}
+header h1 img { /* TAIWANロゴ位置です */
+  display: none;
+  /* position: absolute;
+  top: 3px;
+  width: 111px; */
+}
+header .mainLogo img {
+  width: 335px;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+header .placeLogo { /* 文字ロゴ位置です */
+  position: absolute;
+  top: 120px;
+  right: 88px;
+  width: 199px;
+}
+header .snsIcon { /* SNSアイコン位置です */
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+  width: 39px;
+}
+header .snsIcon img {
+  margin-top: 20px;
+  width: 39px;
+}
+
+header .snsIcon img:hover {
+  opacity: 0.5;
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+}
+
+header .text { /* テキスト位置です */
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  width: 247px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 19.2px;
+  color: #fff;
+}
+header .menuButton {
+  position: absolute;
+  width: 48px;
+  top: 4px;
+  right: 4px;
+}
+
+.mainLogo .mainLogoPc {
+  display: none;
+}
+
+/* -------　共有部分　------- */
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  width: 220px;
+  height: 40px;
+  background-image: url(../images/heading_sp.svg);
+  background-repeat: no-repeat;
+  margin: 0px auto 40px auto;
+  padding-top: 8px;
+}
+h2 span {
+  font-size: 12px;
+}
+
+/* -------　ここから　------- */
+
+.mainLogo img {
+  width: 780px;
+  position: absolute;
+  left: 223px;
+  top: 174px;
+ }
+.menuButton {
+  display: flex;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.snsIcon {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+}
+.facebook, .instagram, .twitter {
+  margin: 10px 0px;
+}
+.featuredContent {
+  display: block;
+  height: 806px;
+}
+
+
+/*　------- featuredContent　------- */
+
+.containerUpper {
+height:407px;
+background-image: url(../images/introductionBackgroundImage1.png);
+background-position: center 20%;
+background-size: cover;
+}
+.containerLower {
+  background-image: url(../images/introductionBackgroundImage2.png);
+  height: 399px;
+  background-position: 50% bottom;
+  background-size: cover;
+  padding-top: 20px;
+}
+.containerUpper .iI1,
+.containerLower .iI2 {
+  margin: 60px 20px 60px 20px;
+}
+.containerUpper .iI1 img,
+.containerLower .iI2 img {
+  width: 335px;
+  height: 139px;
+}
+.containerUpper p {
+  text-align: center;
+}
+
+.pcFlag {
+  display: none;
+}
+
+.flag {
+  display: flex;
+  margin: 0px auto;
+  width: 32px;
+  padding: 20px 0px;
+}
+h1 {
+  font-size: 24.12px;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 40.5px;
+}
+.lineFor {
+  width: 132px;
+  border-bottom-width : thin;
+  margin: 12px auto 60px;
+}
+
+
+
+
+.lineUpper {
+  width: 223px;
+  border: 1px solid #000000;
+  margin: 20px auto 0px;
+}
+.lineLower {
+  width: 223px;
+  border: 1px solid #000000;
+  margin: 0px auto;
+}
+
+
+
+
+h3 {
+  width: 223px;
+  font-size: 12px;
+  line-height: 19.2px;
+  margin: 12px auto;
+}
+.heading {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 40px;
+  padding: 20px auto 60px;
+}
+.headingImg {
+  background-image: url(/images/heading.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: 50% 50%;
+  background-size: contain;
+  margin: 0px auto;
+  height: 40px;
+  width: 220px;
+}
+
+
+.headingGaImg {
+  background-image: url(/images/heading.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+  background-position: 50% 50%;
+  background-size: contain;
+  margin: 0px auto;
+  height: 40px;
+  width: 100%;
+  left:auto;
+  top: auto;
+}
+.gallery {
+  padding-top: 20px;
+  height: 685px;
+  background-color: #f4f4f4;
+}
+
+
+.heading2 {
+  display: flex;
+  height: 40px;
+  margin-bottom: 60px;
+}
+
+
+#travel {
+  background-color: #f4f4f4;
+}
+.smallTxt {
+  font-size: small;
+  align-self: center;
+}
+
+.mapLink {
+  background-image: url(../images/mapimage.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  padding-bottom: 40px;
+  margin: 60px auto;
+  height: 406.8px;
+  width: 100%; /* 追記 */
+}
+#taipei {
+  right: 60px;
+  top: 60px;
+  position: absolute;
+}
+#taityu {
+  left: 60px;
+  top: 90px;
+  position: absolute;
+}
+#tainan {
+  left: 110px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.event {
+  background-color: #f4f4f4;
+  padding-top: 60px;
+}
+
+.event h1 {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0px auto 20px;
+}
+
+.event h4 {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto 8px;
+}
+
+.event p {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.event img {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.event .eveLanPc {
+  display: none;
+}
+
+.event p {
+  margin: 8px auto 0px;
+  text-align: center;
+}
+.lanthanum, .countdown {
+  padding-bottom: 40px;
+}
+
+.event .eveCouPc {
+  display: none;
+}
+
+.countdown h1 {
+  line-height: 32px;
+}
+
+.basicInfomation {
+  display: block;
+  padding: 20px 20px 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4;  
+}
+.basicInformation h1 {
+  display: block;
+  font-size: 20px;
+  padding: 0px;
+}
+.basicInfomation h2 {
+  display: block;
+}
+.basicInfoWrap {
+  display: block;
+  border: 1px solid #000;
+  padding: 20px 20px 20px 20px;
+  font-size: 12px;
+}
+.basicInfomation ul {
+  display: block;
+  text-align: left;
+}
+.ulUpper {
+  margin: 40px 0px 40px;
+  font-size: 12px;
+  line-height: 19.2px;
+}
+.ulLower {
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+
+
+
+
+/* page top へ戻るボタン*/
+.pageTop {
+  cursor:pointer;
+  height: 48px;
+  width: 48px;
+  position: fixed;
+  right: 4px;
+  bottom: 30px;
+  display: flex;
+  z-index: 2;
+}
+.btn {
+  right: inherit;
+}
+
+
+
+/* -------　SPカルーセル　------- */
+.slider {
+  margin: 0 auto;
+  width: 100%;
+}
+.slider-img {
+  width: 100%;
+}
+.slider-img img { /* 画像サイズ */
+  width: 295px;
+  height: 467px;
+}
+.slider .slick-slide {
+  margin: 0 10px;
+}
+.slick-dots{ /* ドットの位置 */
+  bottom: -40px;
+}
+.slick-dots li button::before{ /* ドットの大きさ */
+  font-size: 18px;
+}
+.slick-dots li{ /* ドットの間隔 */
+  width: 45px;
+}
+
+
+/* -------　footer　------- */
+
+footer {
+  background-color: #007ab7;
+  color: #ffff;
+  margin: 0 auto;
+  text-align: center;
+}
+.footerMenu {
+  font-size: 12px;
+  line-height: 12px;
+  width: 195px;
+  margin:20px auto;
+}
+footer nav li{
+  border-bottom: 1px solid #FFFFFF;
+  text-align: left;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  padding-top:4px;
+}
+footer nav ul li a:hover { 
+  text-decoration: underline;
+}
+
+.footerFlag {
+  width: 32px;
+  height: 24px;
+  margin-top: 20px;
+}
+.footerLogo img{
+  width:71px;
+  height: 28px;
+  float: left;
+  margin-right: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.snsIconSpace img {
+  padding: 8px;
+  padding-bottom: 12px;
+}
+
+
+.snsIconSpace img:hover {
+  opacity: 0.5;
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+}
+
+.footerImgSpace {
+  display: flex;
+  text-align: center;
+}
+.Copyright {
+  border-top: 1px solid #03A9F4;
+  height: 34px;
+}
+footer .Copyright p {
+  font-size: 10px;
+  padding-top: 12px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+/* -------　PC　------- */
+
+@media screen and (min-width: 769px) {
+
+
+  #wrapper {
+      width: 100%;
+  }
+
+
+  /* -------　header　------- */
+
+  header {
+      height: 768px;
+      background-image: url(../images/heroFullPc.png); 
+      background-size: cover;
+      padding: 0 83px; /* ---  header大枠のパディング  --- */
+  }
+  header h1 img {
+      width: 133px;
+      display: none;
+  }
+  header .placeLogo { /* 文字ロゴ位置です */
+      top: 94px;
+      left: 363px;
+  }
+  header .placeLogo img { /* 文字ロゴサイズ調整　追記 */
+      width: 300px;
+  }
+  header .snsIcon { /* SNSアイコン位置です */
+      left: 103px;
+      bottom: 80px;
+  }
+  header .snsIcon img {
+      margin-top: 40px;
+      width: 39px;
+  }
+
+  header .snsIcon img:hover {
+    opacity: 0.5;
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+  }
+
+  header .text { /* テキスト位置です */
+      right: 103px;
+      bottom: 20px;
+      width: 467px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 32px;
+  }
+
+  header .mainLogo img {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 22%;
+    left: 16%;
+    width: 780px;
+    height: 314px;
+  }
+
+  .featuredContent {
+    display: block;
+    height: 100%;
+  }
+
+  .containerUpper {
+    display: flex;
+    height:458px;
+    background: url(../images/introductionBackgroundImage1Pc.png)left top / auto 100% no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    padding:0px 83px;
+    }
+
+  .containerUpper h1 {
+      display: block;
+      font-size: 48px;
+      line-height: 48px;
+      text-align: left;
+      margin: 20px;
+      padding: 0px;
+  }
+
+  .containerUpper p {
+    display: block;
+    font-size: 32px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.formosa {
+  display: block;
+  width: 420px;
+  margin: 0px 20px 60px;
+}
+
+.formosa h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 20px;
+}
+
+.formosa h2 {
+  font-size: 32px;
+  line-height: 32px;
+  margin-left: 20px;
+}
+
+.formosa h3 {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 60px 20px;
+    width: 420px;
+    height: 160px;
+}
+
+.lineFor {
+  width: 420px;
+  border-bottom-width : thin;
+  margin: 12px 20px 60px;
+}
+
+.flag {
+  display: none;
+}
+
+picture {
+  display: flex;
+}
+
+.pcFlag {
+  display: block;
+  margin: 0px auto;
+  width: 104px;
+  margin: 80px 0px 80px 200px;
+}
+
+  .containerUpper .iI1 img {
+    width: 636px;
+    height: 298px;
+    left: 627px;
+    margin: 0px auto;
+  }
+
+  .containerLower {
+    display: flex;
+    background: url(../images/introductionBackgroundImage2Pc.png)left top / auto 100% no-repeat;
+    height: 458px;
+    background-position: 50% bottom;
+    background-size: cover;
+    padding:0px 83px;
+    }
+
+    .containerLower .iI2 img {
+      width: 636px;
+      height: 298px;
+      left: 627px;
+      margin: 0px auto;
+    }
+
+    .lineUpper {
+      width: 420px;
+      border-bottom: 1px solid #000000;
+      margin: 20px auto 0px;
+    }
+  
+    .lineLower {
+        width: 420px;
+        border-bottom: 1px solid #000000;
+        margin: 0px auto;
+    }
+  
+    .containerLower .lineUpper {
+      margin-top: 80px;
+    }
+
+  #travel .mapWrapper {
+    display: flex;
+    align-items: center;
+  }
+  .mapWrapper .mapText {
+    margin: 0 auto;
+  }
+  .mapText h3 {
+    width: 420px;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .mapLink {
+    width: 400px;
+    height: 611px;
+    background-image: url(../images/map_pc.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    padding-bottom: 40px;
+    z-index: 20;
+  }
+  #taipei {
+    width: 99px;
+    right: 0;
+    top: 60px;
+  }
+  #taityu {
+    width: 99px;
+    left: 0;
+    top: 90px;
+  }
+  #tainan {
+    width: 99px;
+    left: 60px;
+    bottom: 0px;
+  }
+
+  h2 {
+    font-size: 48px;
+    text-align: center;
+    width: 530px;
+    height: 96px;
+    background-image: url(../images/heading_pc.svg);
+    padding: 24px 20px; /* 位置調整 */
+    margin: 0px auto 40px auto;
+  }
+  h2 span {
+      font-size: 24px;
+  }
+
+  .gallery {
+    height: 947px;
+    background-color: #f4f4f4;
+  }
+
+  .h2Right {
+    margin-right: 20px;
+    font-size: 48px;
+    text-align: center;
+    width: 530px;
+    height: 96px;
+    background-image: url(../images/heading_pc.svg);
+    padding: 24px 20px; /* 位置調整 */
+  }
+
+  .event h2 {
+    margin: 0px;
+  }
+
+  .event > .h2Left {
+    margin-left: 20px;
+  }
+
+  .slickDotted.slickSlider {
+    margin-top: 160px;
+  }
+
+  .event {
+    padding: 0px 83px;
+  }
+
+  .event .heading2 {
+    margin-left: 20px;
+  }
+
+  .lanthanum, .countdown {
+    display: flex;
+    padding-bottom: 0px;
+  }
+  
+  .lanPcLeft > h1, .couPcLeft > h1 {
+    padding: 0px;
+    text-align: left;
+    font-size: 36px;
+    text-align: 36px;
+  }
+
+  .lanthanum {
+    margin: 120px 20px 80px;
+
+  }
+
+  .event img {
+    margin: 0px;
+  }
+  .event .eveLanSp {
+    display: none;
+  }
+
+  .event .eveLanPc {
+    display: block;
+    margin: 40px 0px 80px;
+  }
+
+  .lanPcRight {
+    display: block;
+    width: 580px;
+    height: 471px;
+  }
+
+  .lanPcRight .lineUpper, .lanPcRight .lineLower {
+    width: 314px;
+    margin: 32px auto;
+  }
+
+  .lanPcRight h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 102px;
+  }
+
+  .lanPcRight p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 32px;
+  }
+
+  .lanPcRight h3 {
+    font-size: 20px;
+    line-height: 32px;
+    width: 314px;
+  }
+
+  .event .eveCouSp {
+    display: none;
+  }
+
+  .event .eveCouPc {
+    display: block;
+    margin: 40px 0px 80px;
+  }
+
+  .couPcRight {
+    display: block;
+    width: 580px;
+    height: 551px;
+    margin-top: 134px;
+  }
+
+  .couPcRight .lineUpper, .couPcRight .lineLower {
+    width: 314px;
+    margin: 32px auto;
+  }
+
+  .couPcRight h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .couPcRight p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 32px;
+  }
+
+  .couPcRight h3 {
+    font-size: 20px;
+    line-height: 32px;
+    width: 314px;
+  }
+
+  .countdown {
+    height: 551px;
+  }
+
+  .countdown h1 {
+    line-height: 32px;
+  }
+
+
+  .basicInfo {
+    width: 1040px;
+  }
+  
+  .basicInfomation {
+    padding: 80px 83px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+
+  .basicInfoH1 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0px;
+    margin: 40px auto 0px;
+  }
+
+  .basicInfomation ul {
+    display: flex;
+    text-align: left;
+  }
+
+  .ulUpper, .ulLower {
+    display: flex;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+    width: 450px;
+  }
+
+  .basicInfoWrap {
+    border: 1px solid #000;
+    width: 1040px;
+    height: 560px;;
+    margin: 0px auto;
+  }
+
+  .ulBasicInfo {
+    display: flex;
+
+  }
+
+  .ulUpper {
+    font-size: 20px;
+    line-height: 32px;
+    display: block;
+    width: 450px;
+    height: 320px;
+    margin: 80px 30px 80px 40px;
+  }
+
+  .ulLower {
+    font-size: 20px;
+    line-height: 32px;
+    display: block;
+    width: 450px;
+    height: 320px;
+    margin: 80px 40px 80px 40px;
+  }
+
+  /* -------　menu　------- */
+  .menuButton {
+    display: none;
+  }
+  #nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 54px;
+      padding-top: 80px;
+  }
+  #nav img {
+      width: 133px;
+  }
+  #nav ul {
+      display: flex;
+  }
+
+
+
+  #nav li {
+      margin-left: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+  }
+
+  #nav li a {
+      position: relative;
+      text-decoration: none;
+  }
+  
+  #nav li a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    bottom: -1px;       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
+    visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+    }
+    
+  #nav li a:hover::after {
+    visibility: visible; /*ホバー後、アンダーラインを可視化する*/
+    }
+
+  #nav li:nth-child(1) {
+      display: none;
+  }
+
+
+
+
+  /* ------- footer ------- */
+
+
+  #footer {
+      font-size: 20px;
+  }
+  .footerFlag {/* 旗画像 */
+      width: 64px;
+      height: 48px;
+      margin-top: 20px;
+  }
+  .footerContainer {
+      display: flex;  /*3列にするためにフレックスにしてます*/
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      margin:0 auto;
+      position:relative;
+  }
+  .footerColumn {
+      flex: 1; /*　3カラムの幅を均一にしています*/
+      text-align: center;
+  }
+  .footerLogo {
+      position:relative;
+      right:350px;
+      bottom: -50px;
+  }
+  .snsIconSpace {
+      position:relative;
+      right: 100px;
+      bottom: -100px;
+  }
+
+   .snsIconSpace img:hover {
+    opacity: 0.5;
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+  }
+
+  .footerColumn .snsIcon {
+      display: flex;
+      justify-content: center;
+  }
+  .footerLogo img {
+      width: 246px;
+      height:103px;
+  }
+  .snsIconSpace  {
+      width: 183px;
+      height:32px;
+      justify-content: space-between;
+  }
+  .footerMenu {
+      margin-left:103px;
+  }
+  .footerMenu li {
+      font-size: 20px;
+      margin-top: 20px;
+      padding-bottom: 12px;
+  }
+  .pageTop { /*PCでのpage top iconの位置と大きさ*/
+      right: 20px;
+      width: 100px;
+      height:100px;
+  }
+  .Copyright {
+      font-size: 12px;
+  }
+
+}
+
+/* -------　PCカルーセル　------- */
+@media screen and (min-width: 769px) {
+
+
+  .slick-dots{ /* ドットの位置 */
+    bottom: -78px;
+    width: 450px;
+    margin-left: 35%;
+    z-index: 2;
+  }
+  .slick-dots li button::before{ /* ドットの大きさ */
+    font-size: 28px;
+  }
+  .slick-dots li{ /* ドットの間隔 */
+    width: 75px;
+  }
+  .arrow_box { /* 矢印 */
+    width: 628px;
+    margin-left: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .prev-arrow { /* 矢印を回転 */
+    transform: rotate(180deg);
+  }
+  .prev-arrow::before { /* 矢印を画像に変更 */
+    content: url(../images/arrows.svg);
+    transform:rotate(45deg);
+  }
+  .next-arrow::before { /* 矢印を画像に変更 */
+    content: url(../images/arrows.svg);
+    transform: rotate(45deg);
+  }
+
+}
